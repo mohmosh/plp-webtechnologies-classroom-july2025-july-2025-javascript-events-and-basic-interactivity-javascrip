@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Interactive Web Page & JavaScript Event Listener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Interactive Web Page</h1>
+
+    <!-- Part 1: Event Handling Example -->
+    <button id="helloBtn">Click Me</button>
+    <p id="message"></p>
+
+    <!-- Part 2: Interactive Elements -->
+    <h2>Light / Dark Mode Toggle</h2>
+    <button id="toggleTheme">Toggle Theme</button>
+
+    <h2>Counter Game</h2>
+    <button id="increaseBtn">Increase</button>
+    <button id="resetBtn">Reset</button>
+    <p>Counter: <span id="counter">0</span></p>
+
+    <h2>FAQ Question</h2>
+    <div class="faq">
+        <h3 class="faq-question">What is JavaScript?</h3>
+        <p class="faq-answer hidden">JavaScript is a programming language used to create interactive effects within web browsers.</p>
+    </div>
+
+    <!-- Part 3: Form Validation -->
+    <h2>Sign Up Form</h2>
+    <form id="signupForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <span class="error" id="nameError"></span>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <span class="error" id="emailError"></span>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span class="error" id="passwordError"></span>
+        <br><br>
+
+        <button type="submit">Sign Up</button>
+        <p id="formSuccess"></p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
